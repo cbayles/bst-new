@@ -1,0 +1,81 @@
+﻿<html>
+<title>
+:...:...:...:...: Big Sky Vegas 2010 :...:...:...:...:
+</title>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<style>
+body{background-color:#FFFFFF}
+A{color:#990000; text-decoration:none}
+A:hover{color:#410C09}
+</style>
+</head>
+<script language=javascript>
+<!-- hide me
+var folder = "";
+var image = "";
+var thisSlide = 1;
+var format = ".jpg";
+var maxPics = 23;
+var comments = new Array("");
+
+function prevSlide() {
+  if (document.images && thisSlide > 1) {
+    loadSlide(--thisSlide);
+  }
+  else {
+    thisSlide = maxPics;
+    loadSlide(thisSlide);
+  }
+}
+function nextSlide() {
+  if (document.images && thisSlide < maxPics) {
+    loadSlide(++thisSlide);
+  }
+  else {
+    thisSlide = 1;
+    loadSlide(thisSlide);
+  }
+}
+
+function loadSlide(slideNumber)
+{
+    document.slide.src = folder + image + slideNumber + format;
+    document.getElementById('slidenum').innerHTML = slideNumber;    
+    //document.getElementById('comments').innerHTML = comments[slideNumber];
+}
+
+function reloadSlideshow() {
+  if (document.images) {
+    document.slide.src = folder + image + '1' + format;
+  }
+}
+// end hide --></SCRIPT> 
+<script language=javascript>
+<!-- Hide from old browsers
+
+function replaceImage() {document.slide.src = folder + image + '1' + format;}
+
+// End hiding -->
+
+</script>
+<body bgcolor="#000000" text="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table border="0" cellspacing="0" cellpadding="0" align="center" >
+ <tr>
+    <td width="480" colspan=3 height="360"><center>
+<img src="../2010/1.jpg" border="0" alt="" name="slide" width="480" height="360"></td>
+  </tr>
+ <tr>
+    <td width="480" colspan=3 height="80"><center>
+    
+    <font face="Bookman Old Style" size="3" color="#000000"><div id=comments></div></font></td>
+  </tr>
+  <tr>
+	<td width="220" align="left"><a href="javascript:prevSlide()"><img src="../prev.gif" border="0" alt="" width="110" height="20"></a></td>
+	<td width="40" align="center"><b>
+    <font face="Lucida Handwriting" size="4" color="#000000"><div id=slidenum>1</div></font></b></td>
+	<td width="220" align="right"><a href="javascript:nextSlide()"><img src="../next.gif" border="0" alt="" width="70" height="20"></a></td>
+  </tr>
+</table>
+</body>
+</html>

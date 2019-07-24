@@ -1,0 +1,65 @@
+<html>
+<title>
+:...:...:...:...: Big Sky Vegas 2003 - Oasis Golf Club :...:...:...:...:
+</title>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<style>
+body{background-color:#FFFFFF}
+A{color:#990000; text-decoration:none}
+A:hover{color:#410C09}
+</style>
+</head>
+<script language=javascript>
+var thisSlide = 0;
+function prevSlide() {
+  if (document.images && thisSlide > 0) {
+    thisSlide--;
+    document.slide.src='o' + thisSlide + '.jpg';
+    document.getElementById('slidenum').innerHTML=thisSlide + 1;
+  }
+  else {
+    thisSlide = 23;
+    document.slide.src='o' + thisSlide + '.jpg';
+    document.getElementById('slidenum').innerHTML=thisSlide + 1;
+  }
+}
+function nextSlide() {
+  if (document.images && thisSlide < 23) {
+    thisSlide++;
+    document.slide.src='o' + thisSlide + '.jpg';
+    document.getElementById('slidenum').innerHTML=thisSlide + 1;
+  }
+  else {
+    thisSlide = 0;
+    document.slide.src='o' + thisSlide + '.jpg';
+    document.getElementById('slidenum').innerHTML=thisSlide + 1;
+  }
+}
+
+function reloadSlideshow() {
+  if (document.images) {
+    document.slide.src='o0.jpg';
+  }
+}
+// --></SCRIPT> 
+<script language=javascript>
+<!-- Hide from old browsers
+
+function replaceImage() {document.slide.src='o0.jpg';}
+
+// End hiding -->
+
+</script>
+<body bgcolor="#000000" text="#ffffff" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
+<table border="0" cellspacing="0" cellpadding="0" align="center" >
+ <tr>
+    <td width="480" colspan=3 height="360"><center>
+<img src="o0.jpg" border="0" alt="" name="slide" width="480" height="360"></td>
+  </tr>
+	<td width="220" align="left"><a href="javascript:prevSlide()"><img src="../prev.gif" border="0" alt="" width="110" height="20"></a></td>
+	<td width="40" align="center"><b>
+    <font face="Lucida Handwriting" size="4" color="#000000"><div id=slidenum>1</div></font></b></td>
+	<td width="220" align="right"><a href="javascript:nextSlide()"><img src="../next.gif" border="0" alt="" width="70" height="20"></a></td>
+</body>
+</html>
